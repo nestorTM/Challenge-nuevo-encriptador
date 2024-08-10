@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -13,10 +14,33 @@
         <img class="logo_Alura" src="assets/Logo.png" alt="Logo de alura">
     </header>
     <main>
-        <textarea name="Area de escritura" id="escribir_texto" cols="35" rows="16" placeholder="Ingrese el texto aquí:" autofocus required spellcheck="false"></textarea>
-    </main>
-    <footer>
+        <form>
+            <fieldset class="encriptador_desencriptador">
+                <textarea name="Area de escritura" id="escribir_texto" cols="35" rows="16" placeholder="Ingrese el texto aquí:" autofocus required spellcheck="false"></textarea>
 
+                <i class="fa fa-exclamation-circle" style="font-size:0.75rem; color: gray;">Solo letras minusculas sin acentos</i>
+                <div class="botones">
+                    <button class="boton">Encriptar</button>
+                    <button class="boton">Desencriptar</button>
+                </div>
+            </fieldset>
+            <section class="texto_encriptado">
+                <img class="imagen_texto" src="assets/Muñeco.png" alt="Imagen de espacio de respuesta">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </section>
+        </form>
+        
+    </main>
+    <footer class="footer">
+       
+            
+        <p class="info">
+            <img src="assets/logo8.png" alt="logotipo de nestor tiempos webside" width="5%">Desarrollado por Nestor Tiempos
+        </p>
+        <a class="info"href="https://www.linkedin.com/in/nestor-tiempos-25971b206/"><img src="assets/linkedin.png" alt="logotipo de linkedin" width="20%">Linkedin</a>
+        <a class="info"href="https://github.com/nestorTM"><img src="assets/github.png" alt="logotipo de GitHub" width="5%">GitHub</a>
+            
     </footer>
 </body>
 </html>

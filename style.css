@@ -1,23 +1,39 @@
 :root{
     --color_fondo: #f3f5fc;
-    --color_azul: darkblue;
+    --color_azul: #0a3871;
+    --color_fondo_boton:#D8DFE8;
+    --color_letra_hover_botones: white;
     --letras_inter: "Inter", sans-serif;
+    --color_footer:#356066;
 
 }
 body{
     background-color: var(--color_fondo);
+   
+   
 }
 /*header{}*/
 
 .logo_Alura{
-    margin: 2.5rem 0 0 2.5rem;;
+    padding: 2.5rem 0 0 2.5rem;;
     width: 7.5rem;
+}
+.principal{
+    display: inline;
+   
+}
+.encriptador_desencriptador{ 
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    box-sizing: border-box;
+    padding: 5rem 0rem 0 17%;
+
 }
 #escribir_texto{
     background-color: var(--color_fondo);
     border: none;
-    margin: 5rem 0 0 15rem;
-    width: auto;
+    width: 100%;
     font-family: var(--letras_inter);
     font-size: 2rem;
     color: var(--color_azul);
@@ -29,4 +45,74 @@ body{
 }
 #escribir_texto::placeholder { 
     color: var(--color_azul); 
+}
+.botones{
+    margin: 1rem 0 4.5rem 0;
+    display: flex;
+    width: 100%;
+    column-gap: 1.5rem;
+}
+.boton{
+    
+    width: 100%;
+    height: 4.188rem;
+    border: 1px solid var(--color_azul);
+    border-radius: 1.5rem;
+    background-color: var(--color_fondo_boton);
+    color: var(--color_azul);
+    font-family: var(--letras_inter);
+    font-size: 1rem;
+    text-align: center;
+    transition: 1s all;
+    
+}
+.boton:hover{
+    background-color: var(--color_azul);
+    color: var(--color_letra_hover_botones);
+    transform: scale(1.15);
+    font-weight: bold;
+
+    
+}
+
+.texto_encriptado{
+ 
+    
+    width: 27%;
+    height: 85%;
+    
+    top: 3.8%;
+    border: 1px solid var(--color_azul);
+    border-radius: 2rem;
+    background-color: var(--color_letra_hover_botones);
+    display: inline-block;
+    box-sizing: border-box;
+}
+.texto_encriptado_imagen{
+    box-sizing: border-box;
+    width: 100%;
+   
+}
+
+.footer{
+    background: url(assets/footer.png);
+    padding: 1.3rem;
+
+    
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_fondo);
+    text-align: center;
+    font-family: var(--letras_inter);
+    text-decoration: none;
+    
 }
