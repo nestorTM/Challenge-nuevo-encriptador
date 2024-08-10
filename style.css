@@ -1,0 +1,32 @@
+:root{
+    --color_fondo: #f3f5fc;
+    --color_azul: darkblue;
+    --letras_inter: "Inter", sans-serif;
+
+}
+body{
+    background-color: var(--color_fondo);
+}
+/*header{}*/
+
+.logo_Alura{
+    margin: 2.5rem 0 0 2.5rem;;
+    width: 7.5rem;
+}
+#escribir_texto{
+    background-color: var(--color_fondo);
+    border: none;
+    margin: 5rem 0 0 15rem;
+    width: auto;
+    font-family: var(--letras_inter);
+    font-size: 2rem;
+    color: var(--color_azul);
+    font-weight: 400;
+    padding: 0;
+    resize: none;
+    outline: none;
+  
+}
+#escribir_texto::placeholder { 
+    color: var(--color_azul); 
+}
