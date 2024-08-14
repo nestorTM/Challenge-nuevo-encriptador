@@ -9,45 +9,41 @@
 }
 body{
     background-color: var(--color_fondo);
-   
-   
 }
-/*header{}*/
-
 .logo_Alura{
-    padding: 2.5rem 0 0 2.5rem;;
+    margin: 2.8% 0 0 2.8%;;
     width: 7.5rem;
 }
-.principal{
-    display: inline;
-   
-}
-.encriptador_desencriptador{ 
+form{
+    width: 100%;
+    height: 90%;
     display: flex;
-    flex-direction: column;
-    width: 64%;
+    flex-direction: row;
+    
+}
+.encriptador_desencriptador{
+    width: 67%;
+    border: solid 1px black;
     box-sizing: border-box;
-    padding: 5rem 0rem 0 17%;
+    padding: 5.6% 3% 3% 16%;
 
 }
-#escribir_texto{
+.texto_a_encriptar{
     background-color: var(--color_fondo);
+    resize: none;
+    outline: none;
     border: none;
     width: 100%;
     font-family: var(--letras_inter);
     font-size: 2rem;
     color: var(--color_azul);
     font-weight: 400;
-    padding: 0;
-    resize: none;
-    outline: none;
-  
 }
-#escribir_texto::placeholder { 
+#texto_a_encriptar::placeholder { 
     color: var(--color_azul); 
 }
 .botones{
-    margin: 1rem 0 4.5rem 0;
+    margin: 1rem 0 3.5rem 0;
     display: flex;
     width: 100%;
     column-gap: 1.5rem;
@@ -70,28 +66,67 @@ body{
     background-color: var(--color_azul);
     color: var(--color_letra_hover_botones);
     transform: scale(1.15);
-    font-weight: bold;
-
-    
+    font-weight: bold;    
 }
-
-.texto_encriptado{
- 
-    
+.resultado{
     width: 27%;
-    height: 85%;
-    
-    top: 3.8%;
-    border: 1px solid var(--color_azul);
+    height: 47.25rem;
     border-radius: 2rem;
+    border: solid 1px var(--color_letra_hover_botones);
     background-color: var(--color_letra_hover_botones);
-    display: inline-block;
+    position: absolute;
+    left: 67%;
+    top: 2.5rem;
+    bottom: 7%;
     box-sizing: border-box;
+    margin: 0 3% 3% 3%;
 }
-.texto_encriptado_imagen{
+.texto_no_encontrado{
+    display: block;
+}
+.resultado_imagen{
     box-sizing: border-box;
     width: 100%;
    
+    padding: 10rem 7% 7% 7%;
+    
+}
+.resultado_titulo_noEncontrado{
+    font-weight: bold;
+    font-family: var(--letras_inter);
+    font-size: 1.5rem;
+    padding: 0 7% 4% 7%;
+    margin: 0 7%;
+    text-align: center;
+    
+}
+.resultado_mensaje_noEncontrado{
+    font-size: 1.rem;
+    font-family: var(--letras_inter);
+    padding: 0 0 74% 0;
+    margin: 0 7%;
+    text-align: center;
+    
+}
+.ocultar_texto_encontrado{
+    display: none;
+    flex-direction: column;
+    height: 47.25rem;
+    padding: 0 7% 3% 7%;
+}
+#texto_encontrado{
+    
+    display: flex;
+    box-sizing: border-box;
+    height: 47.25rem;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.texto_encriptado{
+    box-sizing: border-box;
+    height: 80%;
+    margin: 15% 2% 8% 2%;
 }
 
 .footer{
